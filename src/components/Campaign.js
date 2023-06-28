@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Media from './Media';
 
 const Campaign = ({ campaignData }) => {
   const {
@@ -10,7 +11,7 @@ const Campaign = ({ campaignData }) => {
     medias,
   } = campaignData;
   return (
-    <div className="campaign">
+    <section className="campaign">
       <header className="campaign__header">
         <img src={icon_url} className="campaign__icon" />
         <div className="campaign__infobox">
@@ -21,7 +22,12 @@ const Campaign = ({ campaignData }) => {
           </p>
         </div>
       </header>
-    </div>
+      <section className="medias">
+        {medias.map((mediaData) => (
+          <Media mediaData={mediaData} />
+        ))}
+      </section>
+    </section>
   );
 };
 

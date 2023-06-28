@@ -13,13 +13,14 @@ body {
 /* *** Campaign Feed  */
 
 .campaigns {
+  width: 100%;
   display: grid;
   gap: 1rem;
   justify-content: center;
 }
 
 .campaign {
-  border: solid 1px #ccc;
+  width: 100%;
   padding: 1.12rem;
 }
 
@@ -27,6 +28,9 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem;
+  border-bottom: solid 1px #ccc;
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 
 .campaign__icon {
@@ -53,4 +57,41 @@ body {
 
 .campaign__ppi > span {
   font-weight: 400;
+}
+
+/* *** Media Item  */
+.medias {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.media {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.media__cover {
+  width: 6.3rem;
+  height: 11.2rem;
+}
+
+.media__links {
+  display: flex;
+  width: 100%;
+  border-radius: 4px;
+  border: solid 1px #909a9c;
+  overflow: hidden;
+}
+
+.media__links > button {
+  flex: 1;
+  padding: 0.5rem;
+  background: #fff;
+  border: none;
+}
+
+.media__links > button:first-child {
+  border-right: solid 1px #909a9c;
 }
