@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Campaign from '../components/Campaign';
 
 const API_ENDPOINT = 'https://www.plugco.in/public/take_home_sample_feed';
 
@@ -20,7 +21,7 @@ const Home = () => {
         setCampaignState((state) => ({
           ...state,
           status: 'success',
-          data: data,
+          data: data.campaigns,
         }));
       } catch (e) {
         setCampaignState((state) => ({
@@ -38,8 +39,12 @@ const Home = () => {
   }, [campaignState, setCampaignState]);
 
   return (
-    <div>
-      <h2>{campaignState.status}</h2>
+    <div className="campaigns">
+      {campaignState.status === 'success'
+        ? campaignState.data.map((campaignData) => (
+            <Campaign key={campaignData.id} campaignData={campaignData} />
+          ))
+        : null}
     </div>
   );
 };
