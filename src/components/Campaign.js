@@ -13,7 +13,7 @@ const Campaign = ({ campaignData }) => {
   return (
     <section className="campaign">
       <header className="campaign__header">
-        <img src={icon_url} className="campaign__icon" />
+        <img src={icon_url} className="campaign__icon" alt={name} />
         <div className="campaign__infobox">
           <h2 className="campaign__name">{name}</h2>
           <p className="campaign__ppi">
