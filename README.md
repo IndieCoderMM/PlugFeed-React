@@ -4,6 +4,12 @@
 
 This project aims to recreate the main offer feed of [**The Plug**](https://www.plugco.in/), which is used by influencers to access offers, track earnings and manage their accounts.
 
+## Live Demo
+
+<img src="./image.png" width="250" height="300" />
+
+You can visit the [deployed website here](https://indiecodermm.github.io/PlugFeed-React/).
+
 ## Challenge
 
 **Time Frame: 4 Hr**
@@ -19,23 +25,30 @@ The main goal was to render data from the sample API according to the provided F
 - Optimize load time ⏳
 - Optimize scroll performance ⏳
 
-*Some features marked with ⏳ couldn't be implemented within time limitation, but I plan to add them soon*
+*Some features marked with ⏳ couldn't be implemented due to time limitation, but I plan to add them soon*
 
 ## Stack
 
 This project is built with React. The main technologies used are:
 - Create React App: To set up the project
 - Fetch API: To get JSON data from API endpoint
-- Prop Types: Library for validating props during development
-- React Icons: Rich and simple icon library
+- `prop-types` : Library for validating props during development
+- `react-icons` : Rich and simple icon library
+- `gh-pages`: To deploy on GitHub Pages
 
-## Screenshot
+## Implementation
 
-<img src="./image.png" width="250" height="300" />
+This app follows the following implementation details:
 
-## Live Demo
+- **Data Fetching:** The app fetches data from the API when it starts. If the API request is successful, the data is used for rendering the content.
 
-You can visit the [deployed website here](https://indiecodermm.github.io/PlugFeed-React/).
+- **Component Structure:** The main components used in the app are:
+  -  `Campaign` component - responsible for displaying each item in the feed
+  -  `Media` component - handle each media object within a campaign item
+
+- **Media Actions:** Each media item within a campaign has two buttons associated with it. One button allows the user to copy the track link, while the other button enables them to download the media content.
+
+- **Video Playback:** Play button is displayed for video media items. When the play button is clicked, the video is played inline within the app.
 
 ## Installation
 
