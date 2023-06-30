@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/PlugFeed-React/static/css/main.fb08d4e6.css",
+    "main.js": "/PlugFeed-React/static/js/main.4855e460.js",
+    "static/js/787.b933f0be.chunk.js": "/PlugFeed-React/static/js/787.b933f0be.chunk.js",
+    "index.html": "/PlugFeed-React/index.html",
+    "main.fb08d4e6.css.map": "/PlugFeed-React/static/css/main.fb08d4e6.css.map",
+    "main.4855e460.js.map": "/PlugFeed-React/static/js/main.4855e460.js.map",
+    "787.b933f0be.chunk.js.map": "/PlugFeed-React/static/js/787.b933f0be.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb08d4e6.css",
+    "static/js/main.4855e460.js"
+  ]
+}
