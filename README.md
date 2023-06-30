@@ -22,15 +22,15 @@ This project aims to recreate the main offer feed of [**The Plug**](https://www.
 
 ## Live Demo
 
-<img src="./image.png" width="250" height="300" />
-
 You can visit the [deployed website here](https://indiecodermm.github.io/PlugFeed-React/).
+
+<img src="./image.png" width="280" height="340" />
 
 ## Challenge
 
 **Time Frame: 4 Hr**
 
-The main goal was to render data from the sample API according to the provided Figma design.
+The main goal was to build the mobile UI for the main feed using JSON data from the sample API endpoint.
 
 - Communicate with API and receive JSON data ✔
 - Render the data according to the provided Figma design ✔
