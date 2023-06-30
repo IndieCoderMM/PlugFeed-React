@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Plug Feed - React Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A frontend exercise from [react-take-home](https://github.com/reallabs/react-take-home)
 
-## Available Scripts
+This project aims to recreate the main offer feed of [**The Plug**](https://www.plugco.in/), which is used by influencers to access offers, track earnings and manage their accounts.
 
-In the project directory, you can run:
+## Challenge
 
-### `npm start`
+**Time Frame: 4 Hr**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The main goal was to render data from the sample API according to the provided Figma design.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Communicate with API and receive JSON data ✔
+- Render the data according to the provided Figma design ✔
+- Create a seamless user experience similar to **The Plug** app ✔
+- Handle failed API requests ✔
+- Create UI for failed state ⏳
+- Implement inline video playback ✔
+- Optimize load time ⏳
+- Optimize scroll performance ⏳
 
-### `npm test`
+*Some features marked with ⏳ couldn't be implemented within time limitation, but I plan to add them soon*
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Stack
 
-### `npm run build`
+This project is built with React. The main technologies used are:
+- Create React App: To set up the project
+- Fetch API: To get JSON data from API endpoint
+- Prop Types: Library for validating props during development
+- React Icons: Rich and simple icon library
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Screenshot
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img src="./image.png" width="250" height="300" />
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Live Demo
 
-### `npm run eject`
+You can visit the [deployed website here](https://indiecodermm.github.io/PlugFeed-React/).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To run this project locally, follow the steps below.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Clone the repository to your local machine:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+git clone git@github.com:IndieCoderMM/PlugFeed-React.git
+```
 
-## Learn More
+2. Navigate to the project directory:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+cd PlugFeed-React
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+3. Install the required dependencies:
 
-### Code Splitting
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. Start the development server:
 
-### Analyzing the Bundle Size
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+5. Open your web browser and visit http://localhost:3000 to view the JetFuel Plug Feed app.
 
-### Making a Progressive Web App
+## License
+This project is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Contact
+For any questions or feedback, feel free to reach out to me at hthant00chk@gmail.com.
 
-### Advanced Configuration
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Special thanks to the JetFuel team for providing this frontend exercise.
