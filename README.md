@@ -1,3 +1,19 @@
+<details>
+<summary>Table of Contents</summary>
+
+- [Plug Feed - React Challenge](#plug-feed---react-challenge)
+  - [Live Demo](#live-demo)
+  - [Challenge](#challenge)
+  - [Stack](#stack)
+  - [Implementation](#implementation)
+  - [Installation](#installation)
+  - [Todos](#todos)
+  - [License](#license)
+  - [Contact](#contact)
+  - [Acknowledgments](#acknowledgments)
+
+</details>
+
 # Plug Feed - React Challenge
 
 > A frontend exercise from [react-take-home](https://github.com/reallabs/react-take-home)
