@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import { HiLink, HiDownload } from 'react-icons/hi';
 import { FaPlay } from 'react-icons/fa';
@@ -6,6 +6,17 @@ import { FaPlay } from 'react-icons/fa';
 const Media = ({ mediaData }) => {
   const { cover_photo_url, download_url, tracking_link, media_type } =
     mediaData;
+  const videoRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handlePlay = () => {
+    videoRef.current.play();
+    setIsPlaying(true);
+  };
+
+  const handlePause = () => {
+    setIsPlaying(false);
+  };
 
   const handleCopyTrackLink = () => {
     navigator.clipboard
@@ -16,10 +27,21 @@ const Media = ({ mediaData }) => {
   return (
     <div className="media">
       <div className="media__cover">
-        <img src={cover_photo_url} alt="cover" />
-        {media_type === 'video' && (
+        {media_type === 'video' ? (
+          <video
+            src={download_url}
+            ref={videoRef}
+            onPlay={handlePlay}
+            onPause={handlePause}
+            controls
+          />
+        ) : (
+          <img src={cover_photo_url} alt="cover" />
+        )}
+
+        {!isPlaying && (
           <div className="media__video-cover">
-            <button type="button" className="play-btn">
+            <button type="button" className="play-btn" onClick={handlePlay}>
               <FaPlay />
             </button>
           </div>
