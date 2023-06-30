@@ -67,6 +67,13 @@ npm start
 
 5. Open your web browser and visit http://localhost:3000 to view the JetFuel Plug Feed app.
 
+## Todos
+
+- [ ] Fix download button 🐞
+- [ ] Create failed-UI with retry button 🎯
+- [ ] Lazy loading 🎯
+- [ ] Pull-to-refresh 🎯
+
 ## License
 This project is licensed under the MIT License.
 
