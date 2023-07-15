@@ -100,6 +100,9 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #3335;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 .play-btn {

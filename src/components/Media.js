@@ -40,7 +40,10 @@ const Media = ({ mediaData }) => {
         )}
 
         {!isPlaying && (
-          <div className="media__video-cover">
+          <div
+            className="media__video-cover"
+            style={{ backgroundImage: `url(${cover_photo_url})` }}
+          >
             <button type="button" className="play-btn" onClick={handlePlay}>
               <FaPlay />
             </button>
